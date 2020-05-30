@@ -4,8 +4,8 @@ Test Case For Dominos ®
 
 ## Requirements
 
-Node > 11.15
-Yarn > ~
+- Node > 13.2
+- Yarn > ~
 
 
 ## Installation

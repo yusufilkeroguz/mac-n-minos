@@ -4,8 +4,8 @@ Dominos ® için çalışma
 
 ## Gerekenler
 
-Node > 11.15
-Yarn > ~
+- Node > 13.2
+- Yarn > ~
 
 
 ## Kurulum
