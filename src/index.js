@@ -18,7 +18,7 @@ const AppBundle = (
 );
 
 window.onload = () => {
-    ReactDOM.hydrate(
+    ReactDOM.render(
         AppBundle,
         document.getElementById('root')
     );

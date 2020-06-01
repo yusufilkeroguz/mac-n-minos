@@ -1,9 +1,9 @@
 {
   "extends": [
+    "eslint:recommended",
     "airbnb/base",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "eslint:recommended"
+    "plugin:react-hooks/recommended"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
