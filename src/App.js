@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 import Header from './components/Header';
 import Logo from './components/Logo';
@@ -11,12 +12,11 @@ function App() {
     <React.Fragment>
       <Header>
         <OrderNow title={'Sipariş Hattı'} phone={'444 33 22'} />
-        <Logo width={356} height={38} />
       </Header>
       <Hero />
-      <List title={'Tüm Pizzalarımız'} />
+      <List title={'Tüm Pizzalarımız'} showAllPizzas={true} />
     </React.Fragment>
   );
 }
 
-export default App;
+export default withRouter(App);

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { fetch } from 'whatwg-fetch';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 import ListBox from './ListBox';
+import Button from './Button';
 import Title from './Title';
 
 import { setPizzas } from '../store/pizzaReducer';
@@ -39,6 +42,7 @@ function List(props) {
     <ListElement>
       {props.title && (<Title>{props.title}</Title>)}
       {renderPizzas(pizzas)}
+      {props.showAllPizzas && (<Button as={NavLink} to={'/tum-liste'}>Tüm Pizzaları Görüntüle</Button>)}
     </ListElement>
   );
 }
@@ -48,4 +52,4 @@ const mapDispatchToProps = dispatch => ({
   setPizzas: pizzas => dispatch(setPizzas(pizzas)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(List);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(List));

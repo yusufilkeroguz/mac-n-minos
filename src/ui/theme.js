@@ -1,12 +1,12 @@
 const theme = {
   fontFamily: {
-    _default: `Arial, Helvetica, sans-serif`,
-    primary: `Oswald, ${this._default}`,
-    secondary: `Roboto, ${this._default}`,
+    $default: 'Arial, Helvetica, sans-serif',
+    primary: `Oswald, ${this.$default}`,
+    secondary: `Roboto, ${this.$default}`,
   },
   boxes: {
-    radius: `.5rem`
-  }
+    radius: '.5rem',
+  },
 };
 
 export default theme;

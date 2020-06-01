@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter, NavLink } from 'react-router-dom';
+
+import Button from './Button';
 
 import { mdSize } from '../ui/responsive';
 
@@ -58,22 +61,13 @@ const ListBoxTitle = styled.a`
   flex: 0 0 100%;
   box-sizing: border-box;
   text-align: center;
-  min-height: 45px;
+  min-height: 3rem;
   color: #505061;
 `;
 
-const ListBoxButton = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+const ListBoxButton = styled(Button)`
   flex: 0 0 100%;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #0069a6;
-  color: #fff;
   padding: .5rem 1rem;
-  border-radius: .5rem;
 `;
 
 function ListBox({ pizza }) {
@@ -83,14 +77,14 @@ function ListBox({ pizza }) {
 
   return (
     <ListBoxElement>
-      <ListBoxImage href={'#'}>
+      <ListBoxImage as={NavLink} to={'/pizza/1'}>
         <img src={pizza.image} alt={pizza.name} width={434} height={404} />
       </ListBoxImage>
       <ListBoxDetails>
-        <ListBoxTitle href={'#'}>
+        <ListBoxTitle as={NavLink} to={'/pizza/1'}>
           {pizza.name}
         </ListBoxTitle>
-        <ListBoxButton  href={'#'}>
+        <ListBoxButton as={NavLink} to={'/pizza/1'}>
           İncele
         </ListBoxButton>
       </ListBoxDetails>
@@ -98,4 +92,4 @@ function ListBox({ pizza }) {
   );
 }
 
-export default ListBox;
+export default withRouter(ListBox);
