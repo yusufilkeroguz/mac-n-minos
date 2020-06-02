@@ -4,29 +4,81 @@
       "name": "Barbekü Soslu Sucuklu",
       "price": 59.99,
       "description": "Sucuk, Mozarella Peyniri, Pizza Sos, Barbekü Sos",
-      "image": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_BBQSCK/NULL/434x404/TR",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_BBQSCK/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/_BBQSCK/NULL/1170x400/TR"
+      },
       "categories": ["standart"]
     },
     {
       "name": "Süperos",
       "price": 59.99,
       "description": "Jambon, Sucuk, Sosis, Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Domates, Kekik",
-      "image": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/DOPDOLU/NULL/434x404/TR",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/DOPDOLU/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/DOPDOLU/NULL/1170x400/TR"
+      },
       "categories": ["standart"]
     },
     {
       "name": "Sucuk Sever",
       "price": 59.99,
       "description": "Sucuk, Mozarella Peyniri, Pizza Sos",
-      "image": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_SUCUKPI/NULL/434x404/TR",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_SUCUKPI/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/_SUCUKPI/NULL/1170x400/TR"
+      },
       "categories": ["standart"]
     },
     {
-      "name": "Sucuk Sever",
+      "name": "Klasik",
       "price": 59.99,
       "description": "Sucuk, Mozarella Peyniri, Pizza Sos",
-      "image": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/PIZZA/NULL/434x404/TR",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/PIZZA/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/PIZZA/NULL/1170x400/TR"
+      },
       "categories": ["standart"]
+    },
+    {
+      "name": "Barbekü Soslu Sucuklu Menü",
+      "price": 69.99,
+      "description": "Sucuk, Mozarella Peyniri, Pizza Sos, Barbekü Sos, Kola + Patates Kızartması",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_BBQSCK/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/_BBQSCK/NULL/1170x400/TR"
+      },
+      "categories": ["standart", "menü"]
+    },
+    {
+      "name": "Süperos Menü",
+      "price": 69.99,
+      "description": "Jambon, Sucuk, Sosis, Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Domates, Kekik, Kola + Patates Kızartması",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/DOPDOLU/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/DOPDOLU/NULL/1170x400/TR"
+      },
+      "categories": ["standart", "menü"]
+    },
+    {
+      "name": "Sucuk Sever Menü",
+      "price": 69.99,
+      "description": "Sucuk, Mozarella Peyniri, Pizza Sos, Kola + Patates Kızartması",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/_SUCUKPI/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/_SUCUKPI/NULL/1170x400/TR"
+      },
+      "categories": ["standart", "menü"]
+    },
+    {
+      "name": "Klasik Menü",
+      "price": 69.99,
+      "description": "Sucuk, Mozarella Peyniri, Pizza Sos, Kola + Patates Kızartması",
+      "images": {
+        "thumbnail": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Global/PIZZA/NULL/434x404/TR",
+        "cover": "https://dpe-cdn.azureedge.net/api/medium/ProductOsg/Detail/PIZZA/NULL/1170x400/TR"
+      },
+      "categories": ["standart", "menü"]
     }
   ]
 }

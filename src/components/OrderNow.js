@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { mdSize } from '../ui/responsive';
 
@@ -45,5 +46,10 @@ function OrderNow(props) {
     </OrderNowElement>
   );
 }
+
+OrderNow.propTypes = {
+  title: PropTypes.string,
+  phone: PropTypes.string,
+};
 
 export default OrderNow;

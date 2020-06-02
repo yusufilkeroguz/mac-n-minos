@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { withRouter, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import Button from './Button';
 
@@ -70,26 +71,31 @@ const ListBoxButton = styled(Button)`
   padding: .5rem 1rem;
 `;
 
-function ListBox({ pizza }) {
+function ListBox({ pizza, pizzaId }) {
   if (!pizza) {
     return (<div />);
   }
 
   return (
     <ListBoxElement>
-      <ListBoxImage as={NavLink} to={'/pizza/1'}>
-        <img src={pizza.image} alt={pizza.name} width={434} height={404} />
+      <ListBoxImage as={NavLink} to={`/pizza/${pizzaId}`}>
+        <img src={pizza.images.thumbnail} alt={pizza.name} width={434} height={404} />
       </ListBoxImage>
       <ListBoxDetails>
-        <ListBoxTitle as={NavLink} to={'/pizza/1'}>
+        <ListBoxTitle as={NavLink} to={`/pizza/${pizzaId}`}>
           {pizza.name}
         </ListBoxTitle>
-        <ListBoxButton as={NavLink} to={'/pizza/1'}>
+        <ListBoxButton as={NavLink} to={`/pizza/${pizzaId}`}>
           İncele
         </ListBoxButton>
       </ListBoxDetails>
     </ListBoxElement>
   );
 }
+
+ListBox.propTypes = {
+  pizza: PropTypes.object,
+  pizzaId: PropTypes.number,
+};
 
 export default withRouter(ListBox);

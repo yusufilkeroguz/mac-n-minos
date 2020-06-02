@@ -1,16 +1,10 @@
-const initialState = {
-  pizzas: null,
-};
-
-export const pizzaReducer = (state = initialState, action) => {
+export const pizzasReducer = (state = [], action) => {
   switch (action.type) {
     case 'SET_PIZZAS':
-      return {
+      return [
         ...state,
-        pizzas: action.pizzas,
-      };
-    case 'GET_PIZZAS':
-      return state.pizzas;
+        ...action.pizzas,
+      ];
     default:
       return state;
   }
@@ -18,4 +12,4 @@ export const pizzaReducer = (state = initialState, action) => {
 
 export const setPizzas = pizzas => ({ type: 'SET_PIZZAS', pizzas });
 
-export const getPizzas = _ => ({ type: 'GET_PIZZAS' });
+export default pizzasReducer;

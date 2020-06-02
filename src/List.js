@@ -1,17 +1,26 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import List from './components/List';
-import Logo from './components/Logo';
+import PizzaList from './components/PizzaList';
 import Header from './components/Header';
 
-function App() {
+function ListPage(props) {
+  const { pizzas } = props;
+
   return (
     <React.Fragment>
       <Header relative={true} />
-      <List title={'Tüm Pizzalarımız'} showAllPizzas={false} />
+      <PizzaList title={'Tüm Pizzalarımız'} showAllPizzaButton={false} pizzas={pizzas} />
     </React.Fragment>
   );
 }
 
-export default withRouter(App);
+const mapStateToProps = ({ pizzas }) => ({ pizzas });
+
+ListPage.propTypes = {
+  pizzas: PropTypes.array,
+};
+
+export default withRouter(connect(mapStateToProps, {})(ListPage));

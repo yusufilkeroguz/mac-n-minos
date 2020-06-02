@@ -10,7 +10,7 @@ const Hero = styled.div`
   width: 100%;
   background-image: url('https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg');
   height: 18rem;
-  background-respeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   
   ${mdSize(`
