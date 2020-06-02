@@ -31,9 +31,13 @@ const HeroText = styled.h2`
   box-sizing: border-box;
   color: #ffffff;
   text-shadow: 1px 1px 4px #000000;
-  font-size: 64px;
+  font-size: 28px;
   max-width: 1200px;
   text-align: center;
+  
+  ${mdSize(`
+    font-size: 64px;
+  `)}
 `;
 
 const Hero = ({ text }) => (
