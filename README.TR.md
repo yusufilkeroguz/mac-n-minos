@@ -7,17 +7,26 @@ Dominos ® için çalışma
 - Node > 13.2
 - Yarn > ~
 
-
 ## Kurulum
 
     yarn
 
-#### OR
+#### YADA
 
     yarn install
 
 ## Kullanım
 
-İlk önce 
+APIyi json-server ile yaptım. APIyi ayağa kaldırmak için:
 
-## Description
+    yarn api
+
+Not: Api Olmadan çalışmicaktır.
+
+Development için: 
+
+    yarn start
+    
+SSR için:
+
+    yarn server

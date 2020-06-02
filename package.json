@@ -6,7 +6,7 @@
   "author": "yusufilkeroguz <ilker.oguz@modanisa.com>",
   "license": "MIT",
   "private": false,
-  "homepage": "./",
+  "homepage": "/",
   "dependencies": {
     "@babel/register": "^7.0.0",
     "babel-plugin-dynamic-import-node": "^2.0.0",
@@ -40,7 +40,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "react-scripts build && NODE_ENV=production node server/bootstrap.js"
+    "server": "react-scripts build && NODE_ENV=production node server/bootstrap.js",
+    "api": "json-server --watch json-server.json --port 3001"
   },
   "browserslist": [
     ">0.2%",

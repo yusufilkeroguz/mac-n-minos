@@ -10,10 +10,24 @@ Test Case For Dominos ®
 
 ## Installation
 
+    yarn
+
+#### OR
+
     yarn install
 
 ## Usage
 
-First of all we need 
+I used json-server for API. For raise API
 
-## Description
+    yarn api
+
+Note: App needs API. It will not work without API
+
+For Development: 
+
+    yarn start
+    
+For SSR:
+
+    yarn server
