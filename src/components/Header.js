@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 import Logo from './Logo';
 
@@ -30,7 +31,9 @@ const HeaderElement = styled.div`
 
 const Header = props => (
   <HeaderElement relative={props.relative}>
-    <Logo width={356} height={38} />
+    <NavLink to={'/'}>
+      <Logo width={356} height={38} />
+    </NavLink>
   </HeaderElement>
 );
 

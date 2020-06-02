@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -15,6 +14,12 @@ const ListElement = styled.div`
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
+`;
+
+const ShowAllButton = styled(Button)`
+  margin-top: 2rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
 `;
 
 function renderPizzas(pizzas) {
@@ -34,7 +39,7 @@ function PizzaList({ title = false, showAllPizzaButton = false, pizzas = [] }) {
     <ListElement>
       {title && (<Title>{title}</Title>)}
       {renderPizzas(pizzas)}
-      {showAllPizzaButton && (<Button as={NavLink} to={'/tum-liste'}>Tüm Pizzaları Görüntüle</Button>)}
+      {showAllPizzaButton && (<ShowAllButton as={NavLink} to={'/tum-liste'}>Tüm Pizzaları Görüntüle</ShowAllButton>)}
     </ListElement>
   );
 }

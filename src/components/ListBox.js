@@ -64,11 +64,27 @@ const ListBoxTitle = styled.a`
   text-align: center;
   min-height: 3rem;
   color: #505061;
+  text-decoration: none;
+  font-size: 18px;
+`;
+
+const ListBoxPrice = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: .5rem;
+  color: #a38248;
+  font-size: 20px;
 `;
 
 const ListBoxButton = styled(Button)`
-  flex: 0 0 100%;
-  padding: .5rem 1rem;
+  flex: 0 0 auto;
+  padding: .5rem 3rem;
+  text-decoration: none;
 `;
 
 function ListBox({ pizza, pizzaId }) {
@@ -85,8 +101,11 @@ function ListBox({ pizza, pizzaId }) {
         <ListBoxTitle as={NavLink} to={`/pizza/${pizzaId}`}>
           {pizza.name}
         </ListBoxTitle>
+        <ListBoxPrice>
+          {pizza.price} ₺
+        </ListBoxPrice>
         <ListBoxButton as={NavLink} to={`/pizza/${pizzaId}`}>
-          İncele
+          Satın Al
         </ListBoxButton>
       </ListBoxDetails>
     </ListBoxElement>

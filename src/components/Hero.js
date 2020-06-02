@@ -1,8 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { mdSize } from '../ui/responsive';
 
-const Hero = styled.div`
+const HeroElement = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,5 +19,33 @@ const Hero = styled.div`
     height: 100vh;
   `)}
 `;
+
+const HeroText = styled.h2`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000000;
+  font-size: 64px;
+  max-width: 1200px;
+  text-align: center;
+`;
+
+const Hero = ({ text }) => (
+  <HeroElement>
+    {text && (
+      <HeroText dangerouslySetInnerHTML={{ __html: text }} />
+    )}
+  </HeroElement>
+)
+
+Hero.propTypes = {
+  text: PropTypes.string,
+};
 
 export default Hero;

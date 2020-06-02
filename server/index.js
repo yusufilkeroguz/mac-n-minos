@@ -10,9 +10,9 @@ const app = express();
 app.use(indexController);
 
 app.listen(PORT, (error) => {
-    if (error) {
-        return console.log('something bad happened', error);
-    }
-    
-    console.log("listening on " + PORT + "...");
+  if (error) {
+    return console.log('something bad happened', error);
+  }
+
+  console.log(`listening on ${PORT}`);
 });
